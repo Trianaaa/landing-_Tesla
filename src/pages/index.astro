@@ -4,10 +4,14 @@ import LandingHeader from "../components/LandingHeader.astro";
 import HomeSection from "../components/HomeSection.astro";
 ---
 
-<Layout title="Tesla - El coche del de twiter">
-  <main>
-    <LandingHeader />
-
-    <HomeSection />
+<Layout title="Tesla - El coche del de twitter">
+  <LandingHeader />
+  <main class="relative w-full overflow-auto snap-y snap-mandatory h-screen">
+	<div class="snap-center">
+		<HomeSection />
+	</div>
+	<div class="snap-center">
+		<HomeSection />
+	</div>
   </main>
 </Layout>
