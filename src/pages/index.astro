@@ -1,17 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import LandingHeader from "../components/LandingHeader.astro";
-import HomeSection from "../components/HomeSection.astro";
+import Tesla from "../components/Tesla.astro";
+import ModelY from "../components/ModelY.astro";
+import Powerwall from "../components/Powerwall.astro";
 ---
 
 <Layout title="Tesla - El coche del de twitter">
   <LandingHeader />
   <main class="relative w-full overflow-auto snap-y snap-mandatory h-screen">
 	<div class="snap-center">
-		<HomeSection />
+		<Tesla />
 	</div>
 	<div class="snap-center">
-		<HomeSection />
+		<ModelY />
+	</div>
+	<div class="snap-center">
+		<Powerwall />
 	</div>
   </main>
 </Layout>
